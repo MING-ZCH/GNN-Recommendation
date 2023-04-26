@@ -1,0 +1,53 @@
+# STAM: A Spatiotemporal Aggregation Method for Graph Neural Network-based Recommendation 
+
+# Basic Information:
+
+- Title: STAM: A Spatiotemporal Aggregation Method for Graph Neural Network-based Recommendation (STAM: 一种基于时空聚合的图神经网络推荐方法)
+- Authors: Zhen Yang, Ming Ding, Bin Xu, Hongxia Yang, Jie Tang
+- Affiliation: DCST, Tsinghua University (Yang, Ding, Xu, and Tang), Alibaba Group (Yang)
+- Keywords: Spatiotemporal Aggregation Method, Self-Attention, GNN-based Recommendation
+- URLs: Paper: https://doi.org/10.1145/3485447.3512041, GitHub: https://github.com/zyang-16/STAM.
+
+# 概述:
+
+- a. 本文的研究背景：
+  - 本文提出了一种新的聚合方法STAM，它将时间信息纳入邻居嵌入学习，用于GNN-based推荐系统。
+- b. 过去的研究方法，问题和动机：
+  - 目的是实现从空间到时空的聚合方法的发展。
+- c. 本文提出的研究方法：
+  - STAM将空间结构和时间顺序的角度生成时空邻居嵌入。该方法利用比例点积注意力机制捕捉邻居之间的时间顺序，并使用多头注意力在多个潜在子空间上执行联合注意力。STAM通过大量实验与现有的GNN-based和序列推荐模型进行比较，优于现有的基线方法。
+- d. 方法在任务和性能方面的表现：
+  - STAM能够提高GNN-based推荐系统的准确性，从而实现更好的邻居信息聚合。
+
+# 背景:
+
+- a. 主题和特征：
+  - 本文探讨了基于图神经网络的推荐系统中聚合方法的重要性和当前问题。
+- b. 历史发展：
+  - 以往的方法存在着聚合信息的不足。
+- c. 过去的方法：
+  - 较早的方法采用点集聚合的方式得到一个图信息的表示结果，更高级的方法引入了注意机制使得图中不同部位的向量表达特征的重要程度不同。
+- d. 过去研究缺陷：
+  - 过去的研究方法无法很好地利用时间信息，从而提高最终的推荐结果。
+- e. 需要解决的问题：
+  - 通过增加时间信息提高聚合方法的性能。
+
+# 方法:
+
+- a. 理论基础：
+  - 本文中提出的STAM基于图神经网络，具有可扩展性和可解释性。
+- b. 技术路线：
+  - STAM的过程包括生成时空邻居嵌入、嵌入聚合层、嵌入传播层和预测层。并使用负采样的优化过程。在评估时，本文提出基于Mean Reciprocal Rank (MRR)、Normalized Discounted Cumulative Gain (NDCG)、Hit Ratio (HR) 等指标对模型进行了评估。评估基线方法包括MostPopular、BPRMF、NeuMF、GC-MC、PinSage、NGCF、LightGCN、GRU4Rec、Caser、SASRec和BERT4Rec等。
+- c. 方法创新和工作量：
+  - 本文提出了STAM作为改进的邻居信息聚合方法，可以应用于GNN-based 推荐模型中，利用用户和物品的时间信息追踪数据集中随时间变化的特征。
+- d. 研究结论：
+  - STAM方法能够提供更好的推荐结果。
+
+# 结论:
+
+- a. 工作的重要性：
+  - 本文提出的STAM方法从时间维度上进一步提高了邻居信息聚合工作的性能。
+- b. 创新、性能和工作量：
+  - 本文提出的STAM方法是一个可行的GNN-based 推荐模型，性能比现有的推荐模型更好。
+- c. 研究结论：
+  - 本文提出了一种新的STAM方法用于邻居信息聚合，它能够充分利用时间信息提高GNN-based 推荐模型的推荐准确性。本文对STAM进行了充分的实验验证以及时间复杂度分析。
